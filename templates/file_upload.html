@@ -1,0 +1,64 @@
+<html>
+<body style="background-color:beige;"></body>
+<h1 style="font-family: Arial, Helvetica, sans-serif;font-size: 30;">Air Carrier Departures Estimation</h1>
+<br><br><br>
+    <style>
+        table {
+        font-family: arial, sans-serif;
+        font-size: 11;
+        border-collapse: collapse;
+        width: 100%;
+        }
+        
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+        
+        tr:nth-child(even) {
+        background-color: lightgrey;
+        }
+    </style>
+<form method="post" enctype="multipart/form-data">
+    <input type="file" value="Select File" name="uploaded_file" ><td>&nbsp;</td>
+    <input type="submit" name="Predict_View" value="Predict & View" style="background-color:powderblue; border-color: #dddddd; border-collapse: collapse;"><td>&nbsp;</td><td>&nbsp;</td>
+    <input type="submit" name="Predict_Download" value="Predict & Download" style="background-color:powderblue; border-color: #dddddd; border-collapse: collapse;"><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><input type="reset" value="Reset" style="background-color:powderblue; border-color: #dddddd; border-collapse: collapse;"><td>&nbsp;</td><td>&nbsp;</td>
+    <br><br><br><br><br><br><br>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td> 
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <h4 style="font-size: 12;font-family: Arial, Helvetica, sans-serif;font-weight: normal;font-style: italic;">Please have the following columns as part of the input data file (representation example, input column names are case sensitive):</h4>
+    <table> 
+        <tr>
+            <th style="text-align: center;font-weight: normal;">Airport</th>
+            <th style="text-align: center;font-weight: normal;">Fixed telephone subscriptions</th>
+            <th style="text-align: center;font-weight: normal;">Services, value added (current US$)</th>
+            <th style="text-align: center;font-weight: normal;">Manufacturing, value added (current US$)</th>
+        <tr>
+            <td style="text-align: center;">Delhi</td>
+            <td style="text-align: center;">3268741</td>
+            <td style="text-align: center;">86469545114.22</td>
+            <td style="text-align: center;">4249986924.20</td>
+        </tr>
+    </table>
+    <br><br>
+    <h5 style="font-weight:normal; font-family: arial, sans-serif ;font-size:12;">
+        Please refer to the following links for definition of the attributes:<br>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;</td><a style="font-size: 9" href="https://databank.worldbank.org/metadataglossary/world-development-indicators/series/IS.AIR.DPRT">Air carrier departures</a><br>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;</td><a style="font-size: 9" href="https://databank.worldbank.org/metadataglossary/world-development-indicators/series/IT.MLT.MAIN">Fixed telephone subscriptions</a><br>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;</td><a style="font-size: 9" href="https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.IND.MANF.CD">Manufacturing, value added (current US$)</a><br>
+          <td>&nbsp;&nbsp;&nbsp;&nbsp;</td><a style="font-size: 9" href="https://databank.worldbank.org/metadataglossary/world-development-indicators/series/NV.SRV.TOTL.CD">Services, value added (current US$)</a><br><br>
+    </h5>    
+    <br><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>
+    <td>&nbsp;</td><td>&nbsp;</td><input type="submit" name="Main_Menu" value="Go to Main Menu" style="font-family:'Orator Std';background-color:beige; border-color:beige;outline:beige;"></input>
+    <td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td>  
+    <input type="submit" name="Manual_Entry" value="Predict using Manual Entry" style="font-family:'Orator Std';background-color:beige; border-color:beige;outline:beige;"></input>  
+</form>
+</html>
